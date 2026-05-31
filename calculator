@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,choice;
+    cout<<"enter two numbers:";
+    cin>>a>>b;
+    cout<<"CHOICE: 1.ADD,2.SUB,3.MUL,4.DIV";
+    cin>>choice;
+    switch (choice)
+    {
+      case 1:
+        cout<<a+b;
+        break;
+     case 2:
+       cout<<a-b;
+       break;
+     case 3:
+        cout<<a*b;
+        break;
+     case 4:
+       cout<<a/b;
+       break;
+     default :
+      cout<<"invalid";  
+    }
+    return 0;
+}
