@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+class student
+{
+    int roll_no;
+    int marks;
+    string name;
+    public:
+     void get_data()
+     {
+         cout<<"enter name:";
+         cin>>name;
+         cout<<"enter roll no:";
+         cin>>roll_no;
+         cout<<"marks:";
+         cin>>marks;
+     }
+     void display()
+     {
+         cout<<"name:"<<name;
+         cout<<"roll number:"<<roll_no;
+         cout<<"marks:"<<marks;
+     }
+};
+int main()
+{
+    student s;
+    s.get_data();
+    s.display();
+    return 0;
+}
