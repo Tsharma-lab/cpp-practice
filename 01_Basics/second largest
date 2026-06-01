@@ -1,0 +1,31 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main()
+{
+    int arr[20],n;
+    cout<<"enter the size of array:";
+    cin>>n;
+    cout<<"enter the array:";
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int max=arr[0];
+    int secondmax=arr[0];
+    for(int i=1;i<n;i++)
+    {
+        if(arr[i]>max)
+        {
+            secondmax=max;
+            max=arr[i];
+        }
+        else if(arr[i]>secondmax && arr[i]!=max )
+        {
+            arr[i]=secondmax;
+        }
+    }
+    cout<<"second largest element:"<<secondmax;
+    return 0;
+}
